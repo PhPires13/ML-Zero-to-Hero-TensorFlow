@@ -32,8 +32,7 @@ train_generator = training_datagen.flow_from_directory(
     class_mode='categorical'
 )
 
-
-#
+# Generates images for the validation
 validation_datagen = ImageDataGenerator(rescale=1./255)
 
 validation_generator = validation_datagen.flow_from_directory(
