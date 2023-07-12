@@ -66,9 +66,9 @@ model.compile(loss='categorical_crossentropy',
               metrics=['accuracy'])
 
 # Fit the data
-history = model.fit_generator(train_generator, epochs=25,
-                              validation_data=validation_generator,
-                              verbose=1)
+history = model.fit(train_generator, epochs=25,  # deprecated model.fit_generator() -> model.fit() does the same now
+                    validation_data=validation_generator,
+                    verbose=1)
 
 # With the model trained you can call
 # classes = model.predict(images, batch_size=10)
