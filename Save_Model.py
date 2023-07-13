@@ -12,4 +12,4 @@ ys = np.array([-3.0, -1.0, 1.0, 3.0, 5.0, 7.0], dtype=float)
 model.fit(xs, ys, epochs=500)
 
 # Saves the model state to a file
-model.save(os.path.join('Models'), save_format='tf')
+model.save(os.path.join('model'), save_format='tf')
