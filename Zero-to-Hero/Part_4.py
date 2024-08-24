@@ -7,7 +7,7 @@ import os.path
 import zipfile
 
 import tensorflow as tf
-from keras.src.preprocessing.image import ImageDataGenerator
+from keras.src.legacy.preprocessing.image import ImageDataGenerator
 
 # Extract the training and testing files
 local_zip = 'rps.zip'
